@@ -11,7 +11,7 @@ def main():
     logger.setLevel(logging.INFO)
 
     # 创建一个输出到文件的日志处理程序
-    file_handler = logging.FileHandler('C:/network_login.log') #文件路径注意修改
+    file_handler = logging.FileHandler('network_login.log') #文件路径注意修改
     file_handler.setLevel(logging.DEBUG)
 
     # 创建一个格式化程序，并将其添加到处理程序
@@ -28,7 +28,7 @@ def main():
     pid='2'
     calg='12345678'
     
-    js_file = "C:/a41.js"  #文件路径注意修改
+    js_file = "a41.js"  #文件路径注意修改
     with codecs.open(js_file, "r", "utf-8") as f:
         js_code = f.read()
     ctx = execjs.compile(js_code)
